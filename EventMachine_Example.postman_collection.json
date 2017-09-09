@@ -1,0 +1,161 @@
+{
+	"variables": [],
+	"info": {
+		"name": "EventMachine Example",
+		"_postman_id": "0ba96adc-9557-b767-5858-48b7c2280ea6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "App.RegisterUser",
+			"request": {
+				"url": "http://localhost:8080/api/messagebox/App.RegisterUser",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"payload\": {\n\t\t\"userId\": \"f75899a0-5fc9-4608-8c36-f13dde1bbb7a\",\n\t\t\"username\": \"codeliner\",\n\t\t\"email\": \"contact@prooph.de\"\n\t}\n}"
+				},
+				"description": "Register a new user"
+			},
+			"response": []
+		},
+		{
+			"name": "App.ChangeUsername",
+			"request": {
+				"url": "http://localhost:8080/api/messagebox/App.ChangeUsername",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"payload\": {\n\t\t\"userId\": \"f75899a0-5fc9-4608-8c36-f13dde1bbb7a\",\n\t\t\"newUsername\": \"Martin\"\n\t}\n}"
+				},
+				"description": "Change name of a user"
+			},
+			"response": []
+		},
+		{
+			"name": "App.ValidateEmail",
+			"request": {
+				"url": "http://localhost:8080/api/messagebox/App.ChangeUsername",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"payload\": {\n\t\t\"userId\": \"f75899a0-5fc9-4608-8c36-f13dde1bbb7a\",\n\t\t\"newUsername\": \"Martin\"\n\t}\n}"
+				},
+				"description": "Change name of a user"
+			},
+			"response": []
+		},
+		{
+			"name": "App.InitiateOrgaCreation",
+			"request": {
+				"url": "http://localhost:8080/api/messagebox/App.ValidateEmail",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"payload\": {\n\t\t\"userId\": \"f75899a0-5fc9-4608-8c36-f13dde1bbb7a\",\n\t\t\"validationCode\": \"59b3b898edb8c\"\n\t}\n}"
+				},
+				"description": "Change name of a user"
+			},
+			"response": []
+		},
+		{
+			"name": "App.InviteOrgaMember",
+			"request": {
+				"url": "http://localhost:8080/api/messagebox/App.InitiateOrgaCreation",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"payload\": {\n\t\t\"userId\": \"f75899a0-5fc9-4608-8c36-f13dde1bbb7a\",\n\t\t\"orgaId\": \"f75899a0-5fc9-4608-8c36-f13dde1bbbaa\",\n\t\t\"orgaName\": \"Fancy new organization\"\n\t}\n}"
+				},
+				"description": "Change name of a user"
+			},
+			"response": []
+		},
+		{
+			"name": "App.RejectOrgaInvitation",
+			"request": {
+				"url": "http://localhost:8080/api/messagebox/App.RejectOrgaInvitation",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"payload\": {\n\t\t\"memberId\": \"f75899a0-5fc9-4608-8c36-f13dde1bbb7b\",\n\t\t\"orgaId\": \"f75899a0-5fc9-4608-8c36-f13dde1bbbaa\"\n\t}\n}"
+				},
+				"description": "Change name of a user"
+			},
+			"response": []
+		}
+	]
+}
