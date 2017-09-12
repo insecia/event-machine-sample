@@ -1,5 +1,5 @@
 {
-  "name": "proophsoftware/event-machine-skeleton",
+  "name": "insecia/event-machine-sample",
   "description": "Dockerized skeleton for prooph software Event Machine",
   "homepage": "http://prooph.de/",
   "license": "BSD-3-Clause",
